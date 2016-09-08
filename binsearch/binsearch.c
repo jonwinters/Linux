@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "binsearch.h"
 
 int binsearch(int x ,int v[] ,int n)
 {
