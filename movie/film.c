@@ -25,12 +25,6 @@ char * s_gets(char * st,int n) {
 }
 
 
-void NotLegal(int *i) {
-	if (*i > 10)
-		*i=10;
-	if (*i < 0)
-		*i=0;
-}
 
 
 
@@ -49,7 +43,6 @@ int main(int agrc,char **agrv)
 	while (s_gets(temp.title,TSIZE) != NULL && temp.title[0] !='\0') {
 		puts("Enter your rating <0-10>:");
 		scanf("%d",&temp.rating);
-		Notlegal(&temp.rating);
 		while (getchar() != '\n')
 			continue;
 		if (AddItem(temp,&movies) == false) {
